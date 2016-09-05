@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "babel-plugin-transform-es2015-modules-commonjs",
+    ["../../../", {
+      "replacedModuleName": "babel-dotenv",
+      "configDir": "test/fixtures/prod-env"
+    }],
+  ]
+}
