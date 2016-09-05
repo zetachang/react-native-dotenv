@@ -1,6 +1,6 @@
 {
   "name": "react-native-dotenv",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Let you `import` environment variables from a **.env** file in React Native",
   "main": "index.js",
   "scripts": {
