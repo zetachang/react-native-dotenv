@@ -35,7 +35,7 @@ API_KEY=lorem
 ANOTHER_CONFIG=foobar
 ```
 
-And import it in your **.js** file.
+Now you can import it in your **.js** file.
 
 ```js
 import { API_KEY, ANOTHER_CONFIG } from 'react-native-dotenv'
@@ -45,7 +45,7 @@ ApiClient.init(API_KEY, ANOTHER_CONFIG)
 
 ## How it works?
 
-As you can see, it's implemented as a babel plugin. All referenced imported members are replaces as the values specified in the **.env** file.
+As you can see, it's implemented as a babel plugin. All referenced imported members are replaced as the values specified in the **.env** file.
 
 The example above will get compiled as below.
 
