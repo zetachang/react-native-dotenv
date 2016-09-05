@@ -4,7 +4,7 @@
   "description": "Let you `import` environment variables from a **.env** file in React Native",
   "main": "index.js",
   "scripts": {
-    "test": "cd babel-plugin-dotenv && npm test"
+    "test": "cd babel-plugin-dotenv && npm install && npm test"
   },
   "keywords": [
     "dotenv",
