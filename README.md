@@ -61,10 +61,14 @@ Yes, simply create a separate **.env.production** file and the default release p
 To test it locally, you can use the **Release** configuration to launch the Simulator / Emulator.
 
 ### iOS
-`react-native run-ios --configuration Release` 
+```
+react-native run-ios --configuration Release
+```
 
 ### Android
-`react-native run-android --configuration Release`
+````
+react-native run-android --configuration Release
+```
 
 ## Benefits we got
 
