@@ -12,18 +12,18 @@ Let you `import` environment variables from a **.env** file in React Native, **d
 $ npm install react-native-dotenv --save-dev
 ```
 
-If you haven't got **.babelrc** set up for React Native, run
-
-```sh
-$ npm install babel-preset-react-native --save-dev
-```
-
-And create a file named **.babelrc** as follow in the project root.
+Add the `react-native-dotenv` preset to your **.babelrc** file at the project root.
 
 ```json
 {
   "presets": ["react-native", "react-native-dotenv"]
 }
+```
+
+If you haven't got **.babelrc** set up for React Native, remember to install `babel-preset-react-native` first.
+
+```sh
+$ npm install babel-preset-react-native --save-dev
 ```
 
 ## Usage
@@ -53,6 +53,18 @@ The example above will get compiled as below.
 
 ApiClient.init('lorem', 'foobar')
 ```
+
+## Can I use different **.env** settings for production ?
+
+Yes, simply create a separate **.env.production** file and the default release process of react-native will pickup the right config.
+
+To test it locally, you can use the **Release** configuration to launch the Simulator / Emulator.
+
+### iOS
+`react-native run-ios --configuration Release` 
+
+### Android
+`react-native run-android --configuration Release`
 
 ## Benefits we got
 
