@@ -17,7 +17,7 @@ module.exports = function (data) {
                 var configDir = options.configDir ? options.configDir : './';
 
                 if (path.node.source.value === options.replacedModuleName) {
-                  var config = dotEnv.config({ path: sysPath.join(configDir, '.env'), slient: true }) || {};
+                  var config = dotEnv.config({ path: sysPath.join(configDir, '.env'), silent: true }) || {};
                   var platformPath = (process.env.BABEL_ENV === 'development' || process.env.BABEL_ENV === undefined) ? '.env.development' : '.env.production';
                   var config = Object.assign(config, dotEnv.config({ path: sysPath.join(configDir, platformPath) }));
 
