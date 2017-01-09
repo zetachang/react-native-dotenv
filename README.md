@@ -74,7 +74,7 @@ react-native run-android --configuration Release
 
 * It could find out error like importing an non-existing variable.
 
-![](error.png)
+![](https://github.com/zetachang/react-native-dotenv/raw/master/error.png)
 
 * Zero native code integration required. (compared to [react-native-config](https://github.com/luggit/react-native-config))
 * Given that we use the existing [dotenv](https://www.npmjs.com/package/dotenv) package to parse **.env** file, the same config file could be reused in nodejs environment.
