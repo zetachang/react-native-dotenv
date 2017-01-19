@@ -58,17 +58,18 @@ ApiClient.init('lorem', 'foobar')
 
 Yes, simply create a separate **.env.production** file and the default release process of react-native will pickup the right config.
 
-To test it locally, you can use the **Release** configuration to launch the Simulator / Emulator.
-
 ### iOS
+
+You can use the **Release** configuration to launch the Simulator.
+
 ```
 react-native run-ios --configuration Release
 ```
 
 ### Android
-````
-react-native run-android --configuration Release
-```
+
+1. `Command⌘` + `M` to launch the developer menu in Android emulator.
+2. Toggle production / developement inside it.
 
 ## Benefits we got
 
