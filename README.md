@@ -69,7 +69,8 @@ react-native run-ios --configuration Release
 ### Android
 
 1. `Command⌘` + `M` to launch the developer menu in Android emulator.
-2. Toggle production / developement inside it.
+2. Tap **DevSettings**.
+3. Toggle **JS Dev Mode**.
 
 ## Benefits we got
 
