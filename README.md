@@ -60,7 +60,7 @@ Yes, simply create a separate **.env.production** file and the default release p
 
 ### iOS
 
-You can use the **Release** configuration to launch the Simulator.
+You can use the **Release** configuration to launch the Simulator. (Only supported in RN v0.39+)
 
 ```
 react-native run-ios --configuration Release
