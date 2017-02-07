@@ -81,6 +81,12 @@ react-native run-ios --configuration Release
 * Zero native code integration required. (compared to [react-native-config](https://github.com/luggit/react-native-config))
 * Given that we use the existing [dotenv](https://www.npmjs.com/package/dotenv) package to parse **.env** file, the same config file could be reused in nodejs environment.
 
+## Troubleshooting
+
+### Changes to .env file is not updated
+
+Manually edit the file importing `react-native-dotenv` (either add a blank line or whitespace) will work.
+
 ## Contact
 
 [David Chang](http://github.com/zetachang)
