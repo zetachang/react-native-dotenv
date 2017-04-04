@@ -1,6 +1,6 @@
 {
   "name": "react-native-dotenv",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Babel preset let you `import` application configs from **.env** file (zero runtime dependency)",
   "main": "index.js",
   "scripts": {
