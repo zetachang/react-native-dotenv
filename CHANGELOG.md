@@ -15,9 +15,15 @@ Whitespace conventions:
 - 1 spaces before normal text
  -->
 
+## [0.0.4] - 2017-4-4
+
+## Fixed
+
+- Misleading not found errors is shown (#14)
+
 ## [0.0.3] - 2017-1-9
 
 ### Fixed
 
 - Sometimes .env file could not be found. (#3)
-- Some of dotenv warnings are correctly ignored now, thanks @levity! (#4) 
+- Some of dotenv warnings are correctly ignored now, thanks @levity! (#4)
