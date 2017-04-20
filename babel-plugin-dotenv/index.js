@@ -32,7 +32,7 @@ module.exports = function (data) {
                     var localId = specifier.local.name;
 
                     if(!config[importedId]) {
-                      throw path.get('specifiers')[idx].buildCodeFrameError('Try to import dotenv variable "' + importedId + '" which is not defined in any .env files.')
+                      throw path.get('specifiers')[idx].buildCodeFrameError('Try to import dotenv variable "' + importedId + '" which is not defined in any ' + configFile + ' files.')
                     }
 
                     var binding = path.scope.getBinding(localId);
