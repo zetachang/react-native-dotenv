@@ -37,6 +37,11 @@ describe('myself in some tests', function() {
     expect(result.code).to.be('\'use strict\';\n\nconsole.log(\'abc123\');\nconsole.log(\'userdonthavename\');')
   })
 
+  it('should load custom env file "build.env" and its overwrites', function(){
+    var result = babel.transformFileSync('test/fixtures/filename/source.js')
+    expect(result.code).to.be('\'use strict\';\n\nconsole.log(\'abc123456\');\nconsole.log(\'userdonthavename123456\');')
+  })
+
   it('should load let .env.production overwrite .env', function(){
     process.env['BABEL_ENV'] = 'production';
     var result = babel.transformFileSync('test/fixtures/prod-env/source.js')
