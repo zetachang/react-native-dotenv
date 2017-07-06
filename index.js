@@ -1,4 +1,4 @@
-var config = require("metro-bundler/rn-cli.config");
+var config = require("metro-bundler/build/rn-cli.config");
 
 module.exports = {
   plugins: [
