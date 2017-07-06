@@ -1,4 +1,4 @@
-var config = require("react-native/packager/rn-cli.config");
+var config = require("metro-bundler/rn-cli.config");
 
 module.exports = {
   plugins: [
