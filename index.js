@@ -1,10 +1,10 @@
-var config = require("metro-bundler/build/rn-cli.config");
+var path = require('path');
 
 module.exports = {
   plugins: [
     [require('babel-plugin-dotenv'), {
       replacedModuleName: 'react-native-dotenv',
-      configDir: config.getProjectRoots()[0]
+      configDir: path.resolve(__dirname, "../../")
     }],
   ],
 };
