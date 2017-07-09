@@ -58,8 +58,7 @@ ApiClient.init('lorem', 'foobar')
 
 ### Changes to .env file is not updated
 
-Manually edit the file importing `react-native-dotenv` (either add a blank line or whitespace) will work.
-
+Manually edit the file importing `react-native-dotenv` by either adding an empty line or whitespace will work.
 
 ### Can I use different **.env** settings for production ?
 
