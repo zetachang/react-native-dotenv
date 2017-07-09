@@ -43,7 +43,7 @@ import { API_KEY, ANOTHER_CONFIG } from 'react-native-dotenv'
 ApiClient.init(API_KEY, ANOTHER_CONFIG)
 ```
 
-## How it works?
+## How does it works?
 
 As you can see, it's implemented as a babel plugin. All referenced imported members are replaced as the values specified in the **.env** file.
 
@@ -54,38 +54,33 @@ The example above will get compiled as below.
 ApiClient.init('lorem', 'foobar')
 ```
 
-## Can I use different **.env** settings for production ?
+## FAQ
+
+### Changes to .env file is not updated
+
+Manually edit the file importing `react-native-dotenv` (either add a blank line or whitespace) will work.
+
+
+### Can I use different **.env** settings for production ?
 
 Yes, simply create a separate **.env.production** file and the default release process of react-native will pickup the right config.
 
-### iOS
+#### iOS
 
 You can use the **Release** configuration to launch the Simulator. (Only supported in RN v0.39+)
 
 ```
 react-native run-ios --configuration Release
 ```
-
-### Android
+#### Android
 
 1. `Command⌘` + `M` to launch the developer menu in Android emulator.
 2. Tap **DevSettings**.
 3. Toggle **JS Dev Mode**.
 
-## Benefits we got
+### Can I have more than `production` & `developement` environment configs?
 
-* It could find out error like importing an non-existing variable.
-
-![](https://github.com/zetachang/react-native-dotenv/raw/master/error.png)
-
-* Zero native code integration required. (compared to [react-native-config](https://github.com/luggit/react-native-config))
-* Given that we use the existing [dotenv](https://www.npmjs.com/package/dotenv) package to parse **.env** file, the same config file could be reused in nodejs environment.
-
-## Troubleshooting
-
-### Changes to .env file is not updated
-
-Manually edit the file importing `react-native-dotenv` (either add a blank line or whitespace) will work.
+Sadly, it's not available so far. One of the workaround is generating **.env** file before triggering RN's bundle script automatically using either shell script or your own custom build pipeline.
 
 ## Contact
 
