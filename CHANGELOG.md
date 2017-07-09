@@ -15,6 +15,16 @@ Whitespace conventions:
 - 1 spaces before normal text
  -->
 
+## [0.1.0] - 2017-7-9
+
+## Fixed
+
+- Compatibility with RN 0.46+ (#21)
+
+## Added
+
+- Add filename config to allow user to custom filename of .env file (#16)
+
 ## [0.0.4] - 2017-4-4
 
 ## Fixed
