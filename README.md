@@ -77,7 +77,7 @@ react-native run-ios --configuration Release
 2. Tap **DevSettings**.
 3. Toggle **JS Dev Mode**.
 
-### Can I have more than `production` & `developement` environment configs?
+### Can I have more than `production` & `development` environment configs?
 
 Sadly, it's not available so far. One of the workaround is generating **.env** file before triggering RN's bundle script automatically using either shell script or your own custom build pipeline.
 
