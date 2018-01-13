@@ -32,6 +32,11 @@ describe('myself in some tests', function() {
     expect(result.code).to.be('\'use strict\';\n\nconsole.log(\'abc123\');\nconsole.log(\'username\');')
   })
 
+  it('should load empty variable as empty string ', function(){
+    var result = babel.transformFileSync('test/fixtures/empty-values/source.js')
+    expect(result.code).to.be('\'use strict\';\n\nconsole.log(\'abc123\');\nconsole.log(\'username\');\nconsole.log(\'\');')
+  })
+
   it('should load let .env.development overwrite .env', function(){
     var result = babel.transformFileSync('test/fixtures/dev-env/source.js')
     expect(result.code).to.be('\'use strict\';\n\nconsole.log(\'abc123\');\nconsole.log(\'userdonthavename\');')
