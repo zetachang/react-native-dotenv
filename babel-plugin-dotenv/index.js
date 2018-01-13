@@ -30,15 +30,13 @@ module.exports = function (data) {
                     }
                     var importedId = specifier.imported.name
                     var localId = specifier.local.name;
-                    if(!(importedId in config)) {
+                    if(!(config.hasOwnProperty(importedId))) {
                       throw path.get('specifiers')[idx].buildCodeFrameError('Try to import dotenv variable "' + importedId + '" which is not defined in any ' + configFile + ' files.')
                     }
 
                     var binding = path.scope.getBinding(localId);
                     binding.referencePaths.forEach(function(refPath){
-                      if ((importedId in config)) {
-                        refPath.replaceWith(t.valueToNode(config[importedId]))
-                      }
+                      refPath.replaceWith(t.valueToNode(config[importedId]))
                     });
                   })
 
