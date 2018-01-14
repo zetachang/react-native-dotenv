@@ -15,6 +15,12 @@ Whitespace conventions:
 - 1 spaces before normal text
  -->
 
+## [0.1.1] - 2018-1-14
+
+### Fixed
+
+- Empty env is treated as env not found. (#25)
+
 ## [0.1.0] - 2017-7-9
 
 ### Fixed

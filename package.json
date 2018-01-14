@@ -1,6 +1,6 @@
 {
   "name": "react-native-dotenv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Babel preset let you `import` application configs from **.env** file (zero runtime dependency)",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "author": "David Chang",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-dotenv": "0.1.0"
+    "babel-plugin-dotenv": "0.1.1"
   }
 }
