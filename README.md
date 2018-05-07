@@ -43,7 +43,7 @@ import { API_KEY, ANOTHER_CONFIG } from 'react-native-dotenv'
 ApiClient.init(API_KEY, ANOTHER_CONFIG)
 ```
 
-## How does it works?
+## How does it work?
 
 As you can see, it's implemented as a babel plugin. All referenced imported members are replaced as the values specified in the **.env** file.
 
