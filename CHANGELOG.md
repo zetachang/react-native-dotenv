@@ -15,6 +15,12 @@ Whitespace conventions:
 - 1 spaces before normal text
  -->
 
+## [0.2.0] - 2018-7-17
+
+### Fixed
+
+- Compatibility with RN 0.56 (Babel 7) (#42)
+
 ## [0.1.1] - 2018-1-14
 
 ### Fixed
