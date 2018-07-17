@@ -16,7 +16,7 @@ Add the `react-native-dotenv` preset to your **.babelrc** file at the project ro
 
 ```json
 {
-  "presets": ["react-native", "react-native-dotenv"]
+  "presets": ["react-native", "module:react-native-dotenv"]
 }
 ```
 
