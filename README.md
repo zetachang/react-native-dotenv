@@ -14,17 +14,9 @@ $ npm install react-native-dotenv --save-dev
 
 Add the `react-native-dotenv` preset to your **.babelrc** file at the project root.
 
-### RN (0.56+) (Babel 7)
 ```json
 {
   "presets": ["module:metro-react-native-babel-preset", "module:react-native-dotenv"]
-}
-```
-
-### RN (<0.56)
-```json
-{
-  "presets": ["metro-react-native-babel-preset", "react-native-dotenv"]
 }
 ```
 
